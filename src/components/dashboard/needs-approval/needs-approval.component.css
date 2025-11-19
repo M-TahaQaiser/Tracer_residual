@@ -1,0 +1,100 @@
+.needs-approval-container {
+  padding: 20px;
+  background-color: var(--background-color);
+  border-radius: 8px;
+  box-shadow: 0 0 10px var(--shadow-color);
+  max-width: 100%;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.report-list {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.report-item {
+  padding: 10px;
+  border-bottom: 1px solid var(--separator-color);
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.report-item:last-child {
+  border-bottom: none;
+}
+
+button,
+.edit-btn,
+.audit-btn {
+  padding: 6px 12px;
+  background-color: #69932f;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover,
+.edit-btn:hover,
+.audit-btn:hover {
+  background-color: #69932f;
+  color: #fff;
+}
+
+button.btn-delete:hover,
+button.btn-view:hover {
+  background: transparent;
+  opacity: .7;
+}
+/* General button styling for both NeedsApproval and NeedsAudit */
+.edit-btn:hover,
+.audit-btn:hover {
+  background-color: #8ba85a;
+}
+
+/* Ensure consistent display and spacing across different components */
+/*.needs-approval-container .report-item button,
+.needs-audit-container .audit-item button {
+  padding: 6px 12px;
+  background-color: var(--accent-color);
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+*//*
+.needs-approval-container .report-item button:hover,
+.needs-audit-container .audit-item button:hover {
+  background-color: #ff7800;
+}
+*/
+
+.pagination-btn {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  color: #69932f;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.pagination-btn.active {
+  background-color: #69932f;
+  color: #fff;
+  border-color: #69932f;
+}
+
+.pagination-btn:not(.active):hover {
+  background-color: #eaf3de;
+  color: #69932f;
+}

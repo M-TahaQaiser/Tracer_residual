@@ -1,0 +1,32 @@
+.totals-container {
+    margin-top: 20px;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the totals cards horizontally */
+    gap: 15px;
+}
+
+.total-field {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: var(--background-color);
+    box-shadow: 0 0 5px var(--shadow-color);
+    min-width: 150px;
+    text-align: center;
+    border: 1px solid #69932f33;
+}
+
+.total-label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: var(--text-color);
+}
+
+.total-value {
+    color: #69932f;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
